@@ -19,7 +19,7 @@ int main (int argc, char **argv)
     srv_addr->sin_addr.s_addr = inet_addr("172.16.40.1");
 
     char *buf = new char[1024];
-    string str ("hello\n");
+    string str ("Hello World\n");
     int msg = str.length();
     size_t length = str.copy(buf,msg);
     
